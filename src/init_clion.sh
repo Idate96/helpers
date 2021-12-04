@@ -2,8 +2,8 @@
 # user input: init_clion.sh -w <workspace> -p <package>
 
 # check if dir ~/ClionProjects exists else create it 
-if [ ! -d ~/ClionProjects ]; then
-    mkdir ~/ClionProjects
+if [ ! -d ~/CLionProjects ]; then
+    mkdir ~/CLionProjects
 fi
 
 # parse arguments
@@ -22,4 +22,4 @@ while getopts ":w:p:" opt; do
 done
 
 # run init_clion.py with the arguments
-python3 ~/git/helpers/src/init_clion.py -w $workspace -n $package -c ~/ClionProjects $package
+python3 ~/git/helpers/src/init_clion.py -w $workspace -n $package -c ~/CLionProjects $package
