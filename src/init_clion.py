@@ -151,7 +151,7 @@ def create_script(project_path, project_name, catkin_ws_path, package_names, for
 
     # Symlink the ProjectHelpers.cmake (helper macros) to the new project dir
     if not os.path.isfile(project_path+"/ProjectHelper.cmake"):
-        os.symlink(init_script_path+"/clion_project_template/ProjectHelper.cmake", project_path+"/ProjectHelper.cmake")
+        os.symlink(init_script_path+"/ProjectHelper.cmake", project_path+"/ProjectHelper.cmake")
 
 
 if __name__ == '__main__':
